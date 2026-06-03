@@ -1,0 +1,21 @@
+/run/initialize
+
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+# 粒子种类：中子
+/gps/particle neutron
+# 能量：0.5 eV
+/gps/energy 0.5 eV
+# 束流设置：从Z轴方向打向靶区
+/gps/pos/type Plane
+/gps/pos/shape Square
+/gps/pos/halfx 10 cm
+/gps/pos/halfy 10 cm
+/gps/pos/centre 0 0 -250 mm
+/gps/direction 0 0 1
+
+# 开始模拟100个粒子
+/run/beamOn 100

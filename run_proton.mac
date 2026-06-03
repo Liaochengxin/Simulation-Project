@@ -1,0 +1,23 @@
+/run/initialize
+
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+# Tumor center: x = 70 mm. Right torso surface: x = 130 mm.
+# Beam starts at x = 160 mm and travels along -X, so the tumor center is
+# roughly 90 mm from the source plane and 60 mm inside tissue. 90 MeV protons
+# put the Bragg peak near the tumor for this shorter entry path.
+/gps/particle proton
+/gps/energy 90 MeV
+/gps/pos/type Plane
+/gps/pos/shape Square
+/gps/pos/halfx 8 mm
+/gps/pos/halfy 8 mm
+/gps/pos/rot1 0 1 0
+/gps/pos/rot2 0 0 1
+/gps/pos/centre 160 0 0 mm
+/gps/direction -1 0 0
+
+/run/beamOn 1000

@@ -1,0 +1,26 @@
+# Build products
+build/
+build_current/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+BNCT_Simulation
+
+# Generated simulation outputs
+figures/
+*.root
+*.csv
+*.hdf5
+*.h5
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# macOS / editor noise
+.DS_Store
+._*
+*.swp
+*.swo
+
